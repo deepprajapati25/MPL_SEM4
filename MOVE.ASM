@@ -8,7 +8,7 @@ LOOP1: MOV bl,[SI]
 MOV [DI],bl 
 INC SI 
 INC DI 
-DEC Cl 
+DEC cl 
 JNZ LOOP1 
 int 03h 
 end start
