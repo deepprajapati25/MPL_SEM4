@@ -13,8 +13,8 @@ MOV bx, dx ; store msb of result in reg bx
 MOV bx, di ; store lsb of result in bx 
 DEC bp ; decrement bp 
 MOV ah,4ch 
-Int 21h 
-Fact proc near ;function for finding the factorial 
+int 21h 
+fact proc near ;function for finding the factorial 
 CMP bx,01 ;if bx=1 
 JZ l11 ;if yes ax=1 
 l12: MUL bx ;find factorial 
