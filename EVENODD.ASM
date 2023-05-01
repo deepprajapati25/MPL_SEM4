@@ -18,7 +18,7 @@ JMP skip
 next: MOV [SI],bl 
 INC SI 
 skip: INC BP 
-DEC CL 
+DEC cl 
 JNZ back 
 int 03H 
 end start
