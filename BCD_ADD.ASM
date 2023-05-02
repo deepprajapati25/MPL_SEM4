@@ -10,7 +10,7 @@ mov bx, b ; Load number2 in bx
 add al, bl; add lower two digits. Result in al
 daa ; adjust result to valid bcd 
 mov bl, al ; store result in bl 
-add ah, bh ; add upper two digits. Result in ah 
+adc ah, bh ; add upper two digits. Result in ah 
 mov al, ah; al=ah as daa works on al only 
 daa ; adjust result to valid BCD 
 mov bh, al; store result in bh 
