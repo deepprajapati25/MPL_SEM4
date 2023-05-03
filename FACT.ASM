@@ -5,7 +5,7 @@ num dw 08h
 MOV ax, @data ; initialize the data segment 
 MOV ds, ax 
 MOV ax, 01 ; initialize ax = 1 
-MOV bx, num ; load the number in cx 
+MOV bx, num ; load the number in bx 
 CALL fact ; call procedure 
 MOV di, ax ; store lsb of result in di 
 MOV bp, 2 ; initialize count for no of times display is called 
