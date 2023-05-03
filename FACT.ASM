@@ -16,7 +16,7 @@ MOV ah,4ch
 int 21h 
 fact proc near ;function for finding the factorial 
 CMP bx,01 ;if bx=1 
-JZ l11 ;if yes ax=1 
+JNZ l11 ;if yes ax=1 
 l12: MUL bx ;find factorial 
 DEC bx ; decrement bx 
 CMP bx,01 ;multiply bx=1 
